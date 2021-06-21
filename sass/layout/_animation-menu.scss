@@ -1,0 +1,96 @@
+/* -------------------menu---------------------*/ 
+
+@mixin mobile-only {
+    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+}
+.plat1{
+    cursor: pointer;
+    position: absolute;
+    animation: mymove 1.5s;
+    &:active .acpgmt{
+        width: 230px;
+    } 
+    &:active .prix{
+        animation: tarif 0.3s;
+        animation-fill-mode: forwards;
+    }
+      &:active + .groupe-check{
+        animation: movecheck-groupe 0.3s ;
+        animation-fill-mode: forwards;
+        .check{ 
+            animation: movecheck 0.5s;
+            animation-fill-mode: forwards;
+          }   
+    }
+}
+.plat2{
+    cursor: pointer;
+    position: absolute;
+    animation: mymove 2s;
+    &:active .acpgmt{
+        width: 230px;
+    } 
+    &:active .prix{
+        animation: tarif 0.3s;
+        animation-fill-mode: forwards;
+    }
+      &:active + .groupe-check2{
+        animation: movecheck-groupe 0.3s ;
+        animation-fill-mode: forwards;
+        .check{ 
+            animation: movecheck 0.5s;
+            animation-fill-mode: forwards;
+          }    
+      }
+   }        
+.plat3{
+    cursor: pointer;
+    position: absolute;
+    animation: mymove 2.4s;
+    &:active .acpgmt{
+        width: 230px;
+    } 
+    &:active .prix{
+        animation: tarif 0.3s;
+        animation-fill-mode: forwards;
+    }
+      &:active + .groupe-check{
+        animation: movecheck-groupe 0.3s ;
+        animation-fill-mode: forwards;
+        .check{ 
+            animation: movecheck 0.5s;
+            animation-fill-mode: forwards;
+          }    
+      }
+   } 
+.plat4{
+    cursor: pointer;
+    position: absolute;
+    animation: mymove 3s;
+    &:active .acpgmt{
+        width: 230px;
+    } 
+    &:active .prix{
+        animation: tarif 0.3s;
+        animation-fill-mode: forwards;
+    }
+    
+      &:active + .groupe-check{
+        animation: movecheck-groupe 0.3s ;
+        animation-fill-mode: forwards;
+        .check{ 
+            animation: movecheck 0.5s;
+            animation-fill-mode: forwards;
+          }    
+      }
+   }    
+      @keyframes tarif {
+        0% {transform: translateX(295px) translateY(-18px);}
+        100% {transform: translateX(235px) translateY(-18px);}
+      } 
+         @keyframes mymove {
+            0% { opacity: 0;transform: translateY(30px);}
+            100% {opacity: 1;transform: translateY(0px);}
+          } 

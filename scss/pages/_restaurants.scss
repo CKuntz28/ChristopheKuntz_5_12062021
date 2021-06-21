@@ -1,0 +1,394 @@
+*
+{
+   font-family : "Roboto", sans-serif; 
+}
+
+/* ---------------------------------------Body--------------------------------------------*/
+
+#bloc_page
+{
+    background-color: #FFFFFF;
+    
+}
+$breakpoints: (mobile: 812px);
+
+@mixin mobile-only {
+    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+}
+     
+.body
+{
+    width: 100%;
+    margin: auto;
+    @include mobile-only { 
+        width: 812px;
+    }
+} 
+
+
+/*-----------------------------------------Header----------------------------------------------*/
+.fleche .fas{
+    color:black ;
+}    
+
+.fleche
+{
+    font-size: 1.4em;
+    margin-top: 5px;
+    margin-left: 20px;
+    float: left;
+    margin-top: 20px;
+    
+    @include mobile-only { 
+        font-size: 2.5em;
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    
+}
+
+.Logo
+{
+    height: 2em;
+    display: flex;
+    margin-left: 95px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: auto;
+    @include mobile-only { 
+        height: 5em;
+        margin-left: 175px;
+    }
+}
+
+.colorback
+{
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 40px;
+    padding-top: 20px; 
+   
+}
+
+.imgrs
+{
+    // width: 375px;
+    width: 100%;
+    height: 280px;    
+    object-fit: cover;
+    position: absolute;
+    @include mobile-only{
+        width: 812px;
+        height: 560px; 
+    }
+}
+
+
+
+
+/*-----------------------------------------Section----------------------------------------------*/
+.couleurfond
+{
+    background-color: rgb(245, 245, 245);
+    border-radius: 35px 35px 0px 0px;
+    position: absolute;
+    // width: 375px;
+    width: 100%;
+    height: 1200px;
+    margin-right: 10px;
+    margin-top: 230px;
+    @include mobile-only{
+        width: 812px;
+        height: 2050px;
+        margin-top: 500px;
+    }
+   
+}
+.coeurmenu
+{
+    font-size: 1.5rem;
+    width: 30px;
+    margin: 30px;
+    margin-top: 40px;
+    float: right;
+    @include mobile-only{
+        font-size: 3rem;
+        margin: 60px;
+        margin-top: 45px;
+        width: 48px;
+    }
+  
+}
+.titre
+{
+    margin-top: 32px;
+    margin-left: 15px;
+    display: flex;
+    font-size: 1.8em;
+    font-family: "Shrikhand", sans-serif; 
+    @include mobile-only{
+        margin-left: 50px;
+        font-size: 3em;
+    }       
+}
+.EPD
+{
+    color: gray;
+    margin-left: 15px;
+    border-bottom: 3px #99E2D0 solid;
+    width: 40px;
+    @include mobile-only{
+        margin-left: 50px;
+        font-size: 1.5em;
+        border-bottom: 4px #99E2D0 solid;
+    }
+}
+.plat1
+{
+    
+    background-color: #FFFFFF;
+    box-shadow: 1px 2px 6px rgb(190 190 190);
+    border-radius: 15px;
+    width: 325px;
+    margin-left: 15px;
+    padding: 10px;
+    
+    @include mobile-only{
+        border-radius: 30px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        padding: 20px 370px 20px 20px;
+    }
+}
+@media (min-width: 813px) {
+    .plat1 {
+        width: 95%; 
+        margin-left: 10px;
+        margin-right: 0px;  
+    }
+  }
+  
+.plat2
+{
+    background-color: #FFFFFF;
+    box-shadow: 1px 2px 6px rgb(190 190 190);
+    border-radius: 15px;
+    width: 325px;
+    margin-left: 15px;
+    padding: 10px;
+   
+    @include mobile-only{
+        border-radius: 30px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        padding: 20px 370px 20px 20px;
+    }
+}
+@media (min-width: 813px) {
+    .plat2 {
+        width: 95%; 
+        margin-left: 10px;
+        margin-right: 0px;  
+    }
+  }
+.plat3
+{
+    background-color: #FFFFFF;
+    box-shadow: 1px 2px 6px rgb(190 190 190);
+    border-radius: 15px;
+    width: 325px;
+    margin-left: 15px;
+    padding: 10px;
+   
+    @include mobile-only{
+        border-radius: 30px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        padding: 20px 370px 20px 20px;
+    }
+}
+@media (min-width: 813px) {
+    .plat3 {
+        width: 95%; 
+        margin-left: 10px;
+        margin-right: 0px;  
+    }
+  }
+.plat4
+{
+    background-color: #FFFFFF;
+    box-shadow: 1px 2px 6px rgb(190 190 190);
+    border-radius: 15px;
+    width: 325px;
+    margin-left: 15px;
+    padding: 10px;
+    
+    @include mobile-only{
+        border-radius: 30px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        padding: 20px 370px 20px 20px;
+    }
+}
+@media (min-width: 813px) {
+    .plat4 {
+        width: 95%; 
+        margin-left: 10px;
+        margin-right: 0px;  
+    }
+  }
+.platcheck{
+    margin-bottom: 15px;
+    @include mobile-only{
+        margin-bottom: 25px;
+    }
+}  
+.nomp
+{
+    font-size: 0.95em;
+    font-weight: bolder;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+    @include mobile-only{
+        font-size: 1.8em;
+        width: 700px;
+    }
+}
+
+.acpgmt
+{
+    font-size: 0.95em;
+    color: gray;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    width: 330px;
+    margin-left: 0px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+    @include mobile-only{
+        font-size: 1.8em;
+        width: 650px;
+    }
+}
+.prixrotate{
+    @include mobile-only{
+        transform:  translateY(-18px);
+    }
+}
+.prix
+{
+    position: absolute;
+   font-weight: bolder;
+   color: black;
+   float: right;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   width: 30px;
+   margin-right: 0px;
+    transform: translateX(295px) translateY(-18px);
+    @include mobile-only{
+        font-size: 2em;
+        margin-left: 280px;
+}
+}
+
+
+.boutonbas
+{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 0.9em;
+    background-color: #9356dc;
+    background-image: linear-gradient(rgb(255, 121, 218), rgb(146, 86, 220));
+    padding: 12px;
+    border-radius: 20px;
+    width: 180px;
+    margin-left: 90px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    @include mobile-only{
+        font-size: 1.9em;
+        width: 280px;
+        padding: 22px;
+        border-radius: 40px;
+        margin-left: 245px;
+    }
+}
+
+
+/*-----------------------------------------Footer----------------------------------------------*/
+
+.backg
+{
+ background-color: rgb(53, 53, 53);
+height: 286px;
+@include mobile-only{
+    height: 450px;
+}
+
+}
+
+
+.Logofooter
+{
+    height: 1.5em;
+    padding: 15px;  
+    @include mobile-only{
+        height:3.5em;
+        padding: 30px; 
+    }
+}
+
+.fourchettemain .fas
+{
+    color:rgb(231, 231, 231);
+    float: left; 
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    @include mobile-only{
+        font-size: 2em;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+.propo
+{
+    color:rgb(231, 231, 231);
+    @include mobile-only{
+        font-size: 2em;
+    }
+}
+
+.mention
+{
+    color:rgb(231, 231, 231);
+     margin-left: 20px;
+     margin-bottom: 16px;
+     @include mobile-only{
+        font-size: 2em;
+    }
+}
+.mention2
+{
+    color:rgb(231, 231, 231);
+    margin-left: 10px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    @include mobile-only{
+        font-size: 1.4em;
+    }
+
+}
+
+
+
+/*-----------------------------------------END----------------------------------------------*/

@@ -1,0 +1,367 @@
+
+*
+{
+    font-family: "Raleway", sans-serif; 
+}
+
+/* ---------------------------------------Body--------------------------------------------*/
+
+$breakpoints: (mobile: 812px);
+
+@mixin mobile-only {
+    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
+       @content;
+     }
+     }           
+    
+#bloc_page
+{
+    background-color: #FFFFFF;    
+}
+
+.body
+{
+    width: 100%;
+    margin: auto;
+     
+} 
+
+
+
+/*-----------------------------------------Header----------------------------------------------*/
+
+.Logo
+{
+    height: 2em;
+    display: flex;
+    margin-left: 95px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    margin: auto;
+    
+}
+
+.colorback
+{   
+    background-color: rgba(231, 231, 231, 0.5);
+    padding-bottom: 40px;
+    padding-top: 20px; 
+    position: relative;
+} 
+
+         
+.info
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(231, 231, 231);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.24),rgb(231, 231, 231), rgb(231, 231, 231),rgb(231, 231, 231),rgb(231, 231, 231));
+    position: relative;
+        @include mobile-only { 
+             padding-top: 20px;
+             padding-bottom: 20px;
+             font-size: 1.5em;
+     }
+}
+
+.geolocalisation
+{
+  text-align: center;
+  font-weight: bold;
+  margin: 0px;
+  margin-left: 15px;
+  position: relative;
+   @include mobile-only { 
+    margin-left: 30px;
+    }
+}
+
+.intro
+{
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-left: 70px;
+    margin-right: 70px;
+    position: relative;
+    @include mobile-only { 
+        font-size: 2em;
+        }
+}
+
+.text
+{
+  text-align: center;
+  font-size: 0.9em;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: rgb(143, 143, 143);
+  position: relative;
+  @include mobile-only { 
+    font-size: 1.4em;
+    margin-top: 50px;
+    }
+}
+
+.boutonheader
+{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 0.9em;
+    background-color: #9356dc;
+    background-image: linear-gradient(rgb(255, 121, 218), rgb(146, 86, 220));
+    padding: 12px;
+    border-radius: 20px;
+    width: 180px;
+    margin-left: 90px;
+    margin-top: 30px;
+    margin: auto;
+    position: relative;
+    @include mobile-only { 
+        font-size: 2em;
+        width: 380px;
+        border-radius: 50px;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        margin-left: 200px;
+        }
+}
+
+
+
+/*-----------------------------------------NAV----------------------------------------------*/
+
+.fonctionnement
+{
+    font-size: 1.3em;
+    font-weight: bolder;
+    margin-left: 110px;
+    margin-right: 50px;
+    margin-top: 10px;
+    background-color: white;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    position: relative;
+    @include mobile-only { 
+        font-size: 2em;
+        margin-left: 280px;
+        }
+}
+
+.nombre
+{
+    margin: 0px 265px 0px 0px;
+    padding-right: 5px;
+    padding-left: 5px;
+    position: absolute;
+    color: #FFFFFF;
+    background-color:  #9356dc;
+    border-radius: 100%; 
+    @include mobile-only{
+        margin: 0px 670px 0px 0px;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 2em;
+        margin-top: 8px;
+    }
+}
+
+.F
+{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    padding-left: 0px;
+    border-radius: 25px;
+    width: 265px;
+    margin-left: 40px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    @include mobile-only { 
+        width: 550px;
+        margin-left: 70px;
+        padding: 60px;
+        border-radius: 50px;
+        margin-top: 50px;
+        } 
+}
+
+.icone
+{
+    margin-left: 28px;
+    position: relative;
+    @include mobile-only{
+        font-size: 3em;
+        margin-right: 20px;
+        margin-left: 0px;
+    }
+}
+
+.choisir
+{
+    margin: 0px;
+    margin-left: 25px;
+    font-weight: bolder;
+    @include mobile-only{
+        font-size: 2em;
+        margin-left: 60px;
+        margin-top: 8px;
+    }
+    
+}
+
+/*-----------------------------------------Section----------------------------------------------*/
+
+.backsection
+{
+    background-color:  rgba(231, 231,231, 0.5);
+    height: 1300px;
+    position: relative;
+    @include mobile-only{
+        height: 1750px;
+    }
+}
+
+.restaurants
+{
+    font-size: 1.3em;
+    font-weight: bolder;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 40px;
+    padding-top: 30px;
+   
+    @include mobile-only{
+        font-size: 2em;
+        margin-left: 320px;
+        padding-top: 60px;
+        margin-top: 80px;
+        margin-bottom:45px;  
+    }
+}
+.image1
+{
+    width: 345px;
+    height: 180px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    padding: 0px 0px 70px 0px; 
+    margin-top: 15px;  
+    margin-bottom: 15px; 
+    margin-left: 15px; 
+    object-fit: cover;
+    @include mobile-only{
+        margin-left: 55px;
+        width: 700px;   
+        height: 280px;
+        padding: 0px 0px 80px 0px; 
+    }
+    
+}
+@media (min-width: 813px) {
+    .image1 {
+        width: 100%; 
+        margin-left: 0px;  
+    }
+  }
+.nouveau
+{
+    position: absolute;
+    background-color: #99E2D0;
+    color:green;
+    font-size: 0.9rem;
+    margin-left: 240px;
+    margin-top: 30px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    @include mobile-only{
+        font-size: 1.5rem;
+        margin-left: 590px;
+        margin-top: 40px;
+        border-radius: 10px;
+        
+    }
+    
+}
+
+.lapalette
+{
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-top: 205px;
+    margin-left: 35px;
+    @include mobile-only{
+        margin-top: 305px;
+        margin-left: 90px;
+        font-size: 1.6rem;
+    }
+}
+
+.quartier
+{
+    position: absolute;
+    font-size: 1.2rem;
+    margin-top: 230px;
+    margin-left: 35px;
+    @include mobile-only{
+        margin-top: 335px;
+        margin-left:90px;
+        font-size: 1.6rem;
+    }
+}
+
+
+/*-----------------------------------------Footer----------------------------------------------*/
+
+
+.backg
+{
+ background-color: rgb(53, 53, 53);
+height: 230px;
+position: relative;
+}
+
+.Logofooter
+{
+    height: 1.5em;
+    padding: 15px;  
+
+}
+.fourchettemain .fas
+{
+    color:rgb(231, 231, 231);
+    float: left; 
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.propo
+{
+    color:rgb(231, 231, 231);
+   
+}
+.mention
+{
+    color:rgb(231, 231, 231);
+     margin-left: 20px;
+     margin-bottom: 16px;
+}
+
+.mention2
+{
+    color:rgb(231, 231, 231);
+    margin-left: 20px;
+    padding-bottom: 20px;
+
+}
+
+/*-----------------------------------------END----------------------------------------------*/
