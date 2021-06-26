@@ -9,7 +9,7 @@ $headings-font-family: "Times New Roman", Times, serif;
 .colornavbar{
    background-color: #F3E9F1;
    &:hover{
-    box-shadow: 0px 2px 9px white;
+    box-shadow: 0px 2px 9px rgb(255, 255, 255);
     
  }
 }
@@ -52,17 +52,14 @@ $headings-font-family: "Times New Roman", Times, serif;
     font-size: 1.5em !important;
     color: white !important;
 }
-// .section{
-//     padding: 0px !important;
-//     border-radius: 30px !important;
-//     object-fit: cover;
-// }
+.form-control{
+        font-size: 1.4em !important;
+}
 .section{
     background-color: #212529 !important;
     margin-bottom: 30px !important;
     &:hover{
-        transform: scale(1.03); 
-       
+        transform: scale(1.03);  
      }
 }
 
@@ -71,21 +68,16 @@ $headings-font-family: "Times New Roman", Times, serif;
    padding: 20px !important;
    border-radius: 0px 0px 30px 30px !important;
    object-fit: cover;
-//    box-shadow: 0px 2px 9px white;
    &:hover{
     box-shadow: 0px 2px 9px white;
-    
  }
   
 }
 .imagesection{
     border-radius: 30px 30px 0px 0px;
-    // box-shadow: 0px 2px 9px white;
     object-fit: cover;
     &:hover{
-        box-shadow: 0px 0px 0px white;
-        
-        
+        box-shadow: 0px 0px 0px rgb(255, 255, 255);
      }
      
 }
@@ -94,8 +86,9 @@ $headings-font-family: "Times New Roman", Times, serif;
     font-size: 2em;
     font-weight: bold;
     list-style-type: none;
-
+   
 }
+
 .etoile{
     font-size: 1.6em;
     color: gold;
@@ -137,7 +130,8 @@ $headings-font-family: "Times New Roman", Times, serif;
 }
 .btnreglement{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
 .sectionfooter{
     margin-top: 20px !important;

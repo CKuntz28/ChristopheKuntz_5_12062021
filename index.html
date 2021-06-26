@@ -4,111 +4,99 @@
     <meta charset="utf-8">
 	<meta name="description" content="On trouve tout chez Orinoco !">
 
-	  <!-- Bootstrap CSS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!--     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" type="text/css" href="public/boots/bootstrap.css">
-	<link rel="stylesheet" href="css/style.css"/>
+	  <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="public/boots/bootstrap.css"/>
+	<link rel="stylesheet" href="public/css/style.css"/>
 	<link rel="stylesheet" href="fontawesome/css/all.css">
 	<link rel = "preconnect" href = "https://fonts.gstatic.com">
+
     <title>Orinoco</title>
 </head>
 <body>
-<!-- Header -->	
+<!-- Header -->
 <div class="bg-dark">
 
-<div class="container-fluid">
-	<div class="navbar row">
-		<nav class="col navbar navbar-expand-md navbar-dark colornavbar">
-			<div class="logo-container">
-					<img class="logo"src="images/petitorinoco.png" alt="chez Orinoco, on y trouve tout"/>
-			</div>		
+
+	<nav class="navbar">
+		<div class="container-fluid">
+		<div class="col navbar navbar-expand-md navbar-dark colornavbar">
+			<div class="navbar-header">
+					<img class="navbar-brand logo" src="images/petitorinoco.png" alt="chez Orinoco, on y trouve tout"/>
+			</div>
+			<div class="togglercolor">
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
-					</button>
+					</button>	
+			</div>		
 		<div id="navbarContent" class="collapse navbar-collapse">
-			<ul class="navbar-nav bartop">
+			<form class="navbar-form navbar-left" action="/action_page.php">
+				<button type="Recherche" class="btn rech">Recherche</button>
+				<div class="form-group">
+				  <input type="text" class="form-control" placeholder="On y trouve...">
+				</div>
+			  </form>
+			<ul class=" nav navbar-nav bartop">
 				 <li class="nav-item ">
 					<a class="nav-link text-right custom" href="#">Acceuil</a>
-				 </li>	
-				 <li class="nav-item ">
-					<a class="nav-link text-right custom" href="#">Recherche</a>
 				 </li>
 				 <li class="nav-item">
 					<a class="nav-link text-right custom" href="panier.html">Panier</a>
 				 </li>
 				 <li class="nav-item active">
 					<a class="nav-link text-right custom" title="Panier" href="panier.html" aria-label="second link"><span class="fas fa-shopping-cart"></span></a>
-			 	</li> 
+			 	</li>
 			</ul>
-		</div>		
-		</nav>
+		</div>
 	</div>
-</div>
+	</div>
+	</nav>
+
 <!-- Section -->
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 ">
 		  <div class="jumbotron colortitre">
             <h1 class="text-center dimentiontitre">" Orinocooo ! On y trouve tout "</h1>
           </div>
-	  </div> 
-	  <div class="col-lg-4 col-md-4 col-sm-12 card section">
-		<img class="imagesection" class=”card-img-top” title="Ourson en peluche" src="images/teddy_4.jpg" alt="chez Orinoco, on y trouve tout" height="200"/>	
+	  </div>
+	  <div class="col-lg-4 col-md-6 col-sm-12 card section">
+		<img class="imagesection" class=”card-img-top” title="Ourson en peluche" src="images/teddy_4.jpg" alt="chez Orinoco, on y trouve tout" height="200"/>
 		<div class="card-body colorsection">
-		   <h2 class="card-title text-center titresection">Ourson Peluche</h2>
+		   <h2 class="card-title text-center titresection">OriPeluche</h2>
 		   <p class="card-text text-left textesection"> - Quaeritat initium nec soli exordiens <strong>umquam arborem</strong> initium graciliumque et et cataractas eorum aliquando <strong>quarum idem </strong> lare exordiens.</p>
-		   <!-- <span class="x">
-			<i class="fas fa-star"></i>
-			<i class="fas fa-star"></i>
-			<i class="fas fa-star"></i>
-			<i class="fas fa-star"></i>
-			<i class="fas fa-star"></i>
-			</span> -->
+
 			<div class="btnsection">
-				<a href="ours.html" class="btn btn-primary stretched-link">VOIR ARTICLE</a>	
-			</div>		
+				<a href="ours.html" class="btn btn-primary stretched-link">VOIR ARTICLE</a>
+			</div>
 		</div>
 	 </div>
-	 <div class="col-lg-4 col-md-4 col-sm-12 card section">
+	 <div class="col-lg-4 col-md-6 col-sm-12 card section">
 		<img class="imagesection" class=”card-img-top” title="Appareil Photo" src="images/vcam_1.jpg" alt="chez Orinoco, on y trouve tout" height="200"/>
 		<div class="card-body colorsection">
-		   <h2 class="card-title text-center titresection">Appareil Photo</h2>
+		   <h2 class="card-title text-center titresection">OriPhoto</h2>
 		   <p class="card-text text-left textesection"> - Quaeritat initium nec soli exordiens <strong>umquam arborem</strong> initium graciliumque et et cataractas eorum aliquando <strong>quarum idem </strong> lare exordiens.</p>
-		   <!-- <span class="x">
-			<i class="fas fa-star"></i>
-			<i class="fas fa-star"></i>
-			<i class="fas fa-star"></i>
-			<i class="fas fa-star"></i>
-			<i class="fas fa-star"></i>
-			</span> -->
+
 			<div class="btnsection">
 				<a href="photo.html" class="btn btn-primary stretched-link">VOIR ARTICLE</a>
 			</div>
 		</div>
 	 </div>
-	 <div class="col-lg-4 col-md-4 col-sm-12 card section">
+	 <div class="col-lg-4 col-md-6 col-sm-12 card section">
 		<img class="imagesection" class=”card-img-top” title="Meuble en Bois" src="images/oak_1.jpg" alt="chez Orinoco, on y trouve tout" height="200"/>
 		<div class="card-body colorsection">
-		   <h2 class="card-title text-center titresection">Meuble en Bois</h2>
+		   <h2 class="card-title text-center titresection">OriMeuble</h2>
 		   <p class="card-text text-left textesection"> - Quaeritat initium nec soli exordiens <strong>umquam arborem</strong> initium graciliumque et et cataractas eorum aliquando <strong>quarum idem </strong> lare exordiens.</p>
-		   <!-- <span class="x">
-			<i class="fas fa-star"></i>
-			<i class="fas fa-star"></i>
-			<i class="fas fa-star"></i>
-			<i class="fas fa-star"></i>
-			<i class="fas fa-star"></i>
-			</span> -->
 			<div class="btnsection">
 				<a href="meuble.html" class="btn btn-primary stretched-link">VOIR ARTICLE</a>
-			</div>	
+			</div>
 		</div>
 	 </div>
     </div>
-</div>	
-	
-<div class="container">
+</div>
+
+<div class="container-fluid">
 	<!-- Footer -->
     <div class="card sectionfooter">
 		<h3 class="col-sm-12 card-title text-center">
@@ -137,23 +125,26 @@
 			</h4>
 			</div>
       </div>
+	  <!-- <button id="return-top" class="return-top visible">
+		<i class="fas fa-arrow-up"></i>
+	</button> -->
 
 
 
 
 
-
-</div>	
-
+</div>
+</div>
 <!-- Optional JavaScript -->
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 </html>
